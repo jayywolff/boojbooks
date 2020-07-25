@@ -1,3 +1,14 @@
+.title {
+    font-size: 84px;
+    img.book-logo {
+        width: 84px;
+    }
+}
+
+.book-logo {
+    filter: invert(42%) sepia(11%) saturate(279%) hue-rotate(155deg) brightness(94%) contrast(87%);
+}
+
 .bg-dark-alt {
     background-color: $bg-alt;
 }
