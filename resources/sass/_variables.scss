@@ -1,0 +1,88 @@
+// Colors
+$bg:             #282C34;
+$bg-alt:         #4B5263;
+$fg:             #ABB2BF;
+$white:          #ffffff;
+$blue:           #61AFEF;
+$indigo:         #6574cd;
+$purple:         #C678DD;
+$pink:           #f66d9b;
+$red:            #BE5046;
+$orange:         #f0ad4e;
+$yellow:         #E5C07B;
+$green:          #98C379;
+$teal:           #4dc0b5;
+$cyan:           #56B6C2;
+$gray-base:      #000;
+$gray-darker:    lighten($gray-base, 13.5%); // #222
+$gray-dark:      lighten($gray-base, 20%);   // #333
+$gray:           lighten($gray-base, 33.5%); // #555
+$gray-light:     lighten($gray-base, 46.7%); // #777
+$gray-lighter:   lighten($gray-base, 93.5%); // #eee
+$light:          $fg;
+$dark:           $bg;
+$yiq-text-dark:  $bg;
+$yiq-text-light: $bg;
+
+$primary: $blue;
+$success: $green;
+$info:    $cyan;
+$warning: $orange;
+$danger:  $red;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base:         1rem;
+$line-height-base:       1.6;
+
+// Body
+$body-bg:    $bg;
+$body-color: $fg;
+$text-color: $fg;
+
+//Links
+$link-color:            $primary;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+//Components
+$component-active-bg:    $bg;
+$component-active-color: $fg;
+
+//Tables
+$table-bg:        transparent;
+$table-bg-accent: $bg-alt;
+
+//Navbar
+$navbar-default-color:     $fg;
+$navbar-default-bg:        $bg-alt;
+$navbar-dark-brand-color:  $fg;
+$navbar-dark-color:        $fg;
+$navbar-dark-active-color: $fg;
+
+// Dropdowns
+$dropdown-bg:                  $bg-alt;
+$dropdown-border:              $bg-alt;
+$dropdown-fallback-border:     $bg-alt;
+$dropdown-divider-bg:          $bg;
+$dropdown-link-color:          $fg;
+$dropdown-link-hover-color:    $white;
+$dropdown-link-hover-bg:       $bg-alt;
+$dropdown-link-active-color:   $white;
+$dropdown-link-active-bg:      $bg-alt;
+$dropdown-link-disabled-color: $gray-light;
+$dropdown-header-color:        $white;
+
+//Cards
+$card-bg:           $bg;
+$card-color:        $fg;
+$card-cap-color:    $fg;
+$card-cap-bg:       $bg;
+$card-border-color: $bg-alt;
+$card-border-width: 2px;
+
+//Forms
+$input-bg:           $bg;
+$input-bg-disabled:  $bg-alt;
+$input-color:        $white;
+$input-border-color: $bg-alt;

@@ -1,0 +1,15 @@
+.bg-dark-alt {
+    background-color: $bg-alt;
+}
+
+.custom-switch {
+    .custom-control-input:focus ~ .custom-control-label::before {
+        border-color: $gray-500;
+    }
+    .custom-control-input:checked ~ .custom-control-label::before {
+        border-color: $gray-500;
+    }
+    .custom-control-input:checked ~ .custom-control-label::after {
+        background-color: $primary;
+    }
+}
