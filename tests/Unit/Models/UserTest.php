@@ -34,6 +34,19 @@ class UserTest extends TestCase
         $this->assertTrue($user->books()->count() == 2);
     }
 
+    /**
+     * Ensure api token is always unique
+     * If this test becomes flaky its broken..
+     *
+     * @return void
+     */
+    public function testGenerateApiToken()
+    {
+        $user = $this->createUser();
+
+        $this->assertTrue($user->api_token != User::generateApiToken());
+    }
+
     private function buildUser()
     {
         return factory(User::class)->make();

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Support\Str;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -16,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'api_token'
     ];
 
     /**
@@ -25,7 +26,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'email_verified_at', 'api_token'
     ];
 
     /**
@@ -45,5 +46,20 @@ class User extends Authenticatable
         return $this->belongsToMany(Book::class, 'user_books')
                     ->withPivot('priority', 'read')
                     ->withTimestamps();
+    }
+
+    /**
+     * Generate a unique api token for users
+     *
+     * @return string
+     */
+    public static function generateApiToken()
+    {
+        $token = Str::random(60);
+        while (User::where('api_token', $token)->exists()) {
+            $token = Str::random(60);
+        }
+
+        return $token;
     }
 }
