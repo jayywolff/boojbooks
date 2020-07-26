@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * The books that belong to the user.
+     */
+    public function books()
+    {
+        return $this->belongsToMany(Book::class, 'user_books')
+                    ->withPivot('priority', 'read')
+                    ->withTimestamps();
+    }
 }
