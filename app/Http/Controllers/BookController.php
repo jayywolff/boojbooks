@@ -14,7 +14,8 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+        $books = auth()->user()->bookCollection();
+        return view('books.index', compact('books'));
     }
 
     /**
@@ -28,17 +29,6 @@ class BookController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  \App\Book  $book
@@ -46,7 +36,13 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //
+        $book = auth()->user()->books()
+                          ->where('id', $book->id)
+                          ->with('author')
+                          ->first();
+
+
+        return view('books.show', compact('book'));
     }
 
     /**
@@ -56,29 +52,6 @@ class BookController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(Book $book)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Book  $book
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Book $book)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Book  $book
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Book $book)
     {
         //
     }

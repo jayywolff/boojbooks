@@ -3,9 +3,10 @@
 namespace App;
 
 use Illuminate\Support\Str;
+use Illuminate\Notifications\Notifiable;
+use App\Http\Resources\Book as BookResource;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -46,6 +47,20 @@ class User extends Authenticatable
         return $this->belongsToMany(Book::class, 'user_books')
                     ->withPivot('priority', 'read')
                     ->withTimestamps();
+    }
+
+    /**
+     * Get a collection of books
+     * @return
+     */
+    public function bookCollection()
+    {
+        return BookResource::collection(
+            $this->books()
+                 ->with('author')
+                 ->orderByRaw('ISNULL(priority), priority ASC')
+                 ->get()
+        );
     }
 
     /**

@@ -20,12 +20,7 @@ class BookController extends Controller
      */
     public function index()
     {
-        $books = auth()->user()->books()
-                               ->with('author')
-                               ->orderBy('priority', 'asc')
-                               ->get();
-
-        return BookResource::collection($books);
+        return auth()->user()->bookCollection();
     }
 
     /**
@@ -98,8 +93,9 @@ class BookController extends Controller
             'title', 'isbn_10', 'isbn_13', 'published_at', 'summary'
         ]);
 
-        $input['author_id'] = Author::firstOrCreate(['name' => $request->input('author')])->id;
-
+        if ($request->has('author') && $request->input('author') != $book->author->name) {
+            $input['author_id'] = Author::firstOrCreate(['name' => $request->input('author')])->id;
+        }
         if ($request->has('priority')) {
             $book->pivot->priority = $request->input('priority');
         }
@@ -142,7 +138,8 @@ class BookController extends Controller
             'isbn_13'      => ['digits:13'],
             'published_at' => ['date', 'before_or_equal:today'],
             'summary'      => ['string'],
-            'priority'     => ['integer']
+            'priority'     => ['integer'],
+            'read'         => ['boolean']
         ]);
     }
 }

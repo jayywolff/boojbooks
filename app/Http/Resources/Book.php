@@ -22,8 +22,12 @@ class Book extends JsonResource
             'isbn_13'      => $this->isbn_13,
             'published_at' => $this->published_at->toDateString(),
             'summary'      => $this->summary,
-            'priority'     => $this->pivot->priority,
-            'read'         => (bool) $this->pivot->read
+            'priority'     => $this->whenPivotLoaded('user_books', function () {
+                return $this->pivot->priority;
+            }),
+            'read'         => $this->whenPivotLoaded('user_books', function () {
+                return (bool) $this->pivot->read;
+            }),
         ];
     }
 }
