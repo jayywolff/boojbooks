@@ -86,3 +86,21 @@ $input-bg:           $bg;
 $input-bg-disabled:  $bg-alt;
 $input-color:        $white;
 $input-border-color: $bg-alt;
+
+//Modals
+$modal-content-bg:    $bg;
+$modal-content-color: $fg;
+
+//Pagination
+$pagination-color:                  $fg;
+$pagination-bg:                     $bg;
+
+$pagination-hover-color:            $white;
+$pagination-hover-bg:               darken($primary, 5%);
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              $primary;
+$pagination-active-border-color:    $primary;
+
+$pagination-disabled-color:         $fg;
+$pagination-disabled-bg:            $bg;

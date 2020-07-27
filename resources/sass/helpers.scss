@@ -28,3 +28,18 @@
         background-color: $primary;
     }
 }
+
+.modal {
+    .close {
+        color: $fg;
+        &:hover,:focus {
+            color: $white;
+        }
+    }
+}
+
+.pagination {
+    button.page-link:focus {
+        box-shadow: none;
+    }
+}

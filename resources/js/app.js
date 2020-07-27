@@ -1,7 +1,7 @@
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
+ * building robust, powerful web applications using Vue and Laravel.;
  */
 
 require('./bootstrap');
@@ -9,6 +9,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 Vue.component('book-collection', require('./components/BookCollection.vue').default);
+Vue.component('new-book-modal', require('./components/NewBookModal.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -17,5 +18,10 @@ Vue.component('book-collection', require('./components/BookCollection.vue').defa
  */
 
 const app = new Vue({
-   el: '#app'
+    el: '#app',
+    methods: {
+        openNewBookModal() {
+            this.$bvModal.show('new-book-modal')
+        }
+    }
 });

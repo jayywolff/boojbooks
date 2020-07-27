@@ -17,10 +17,13 @@
         </div>
 
         <b-table striped hover bordered dark
+            id="books-table"
             :fields="fields"
             :items="items"
             :filter="titleFilter"
             :filter-included-fields="filterBy"
+            :per-page="perPage"
+            :current-page="currentPage"
             responsive="md"
         >
             <template v-slot:cell(id)="data">
@@ -40,12 +43,12 @@
             </template>
             <template v-slot:cell(actions)="data">
                 <div style="height: 0px; width: 100px">&nbsp;</div>
-                <a href="#" class="btn btn-primary btn-sm">
+                <button @click="editBook(data.item)" class="btn btn-primary btn-sm">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
                         <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
                     </svg>
-                </a>
+                </button>
                 <button class="btn btn-danger btn-sm" @click="deleteBook(data.item)">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
@@ -54,6 +57,17 @@
                 </button>
             </template>
         </b-table>
+        <div class="row">
+            <div class="col">
+                <b-pagination
+                    v-model="currentPage"
+                    :total-rows="rows"
+                    :per-page="perPage"
+                    aria-controls="books-table"
+                    align="center"
+                ></b-pagination>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -64,6 +78,7 @@
         FormInputPlugin,
         FormSelectPlugin,
         FormCheckboxPlugin,
+        PaginationPlugin,
         ToastPlugin
     } from 'bootstrap-vue'
 
@@ -72,12 +87,12 @@
     Vue.use(FormInputPlugin)
     Vue.use(FormSelectPlugin)
     Vue.use(FormCheckboxPlugin)
+    Vue.use(PaginationPlugin)
     Vue.use(ToastPlugin)
 
     export default {
         props: {
-            books: Array,
-            user: Object
+            books: Array
         },
         data() {
             return {
@@ -95,10 +110,21 @@
                 titleFilter: '',
                 authorFilter: '',
                 filterBy: ['title'],
-                sortBy: 'priority'
+                sortBy: 'priority',
+                perPage: 10,
+                currentPage: 1
+            }
+        },
+        computed: {
+            rows() {
+                return this.items.length
             }
         },
         methods: {
+            refreshBooks() {
+                this.authorFilter = ''
+                this.filterByAuthor()
+            },
             filterByAuthor() {
                 axios.get('/api/v1/books')
                     .then(({ data }) => {
@@ -125,10 +151,10 @@
                     })
                     .catch(function(error) {
                         self.showErrorNotification(
-                            'Failed to update priority. Please Try again.'
+                            'Failed to update priority. Please try again.'
                         )
                     })
-            }, 750),
+            }, 250),
             sortBooks() {
                 this.items = _.orderBy(this.items, ['priority'], ['asc'])
             },
@@ -137,10 +163,15 @@
                     .catch(error => {
                         book.read = ! book.read
                         this.showErrorNotification(
-                            'Failed to update read status. Please Try again.'
+                            'Failed to update read status. Please try again.'
                         )
                     })
             },
+            editBook:  _.debounce(function(book) {
+                this.showErrorNotification(
+                    'Sorry this feature is not available yet.'
+                )
+            }, 500),
             deleteBook(book) {
                 axios.delete(`/api/v1/books/${book.id}`)
                     .then(response => {
@@ -150,7 +181,7 @@
                     })
                     .catch(error => {
                         this.showErrorNotification(
-                            'Failed to delete book. Please Try again.'
+                            'Failed to delete book. Please try again.'
                         )
                     })
             },
@@ -167,7 +198,7 @@
         },
         mounted() {
             this.updateAuthors()
-            axios.defaults.headers.common['Authorization'] = 'Bearer ' + this.user.api_token
+            this.$root.$on('newBookCreated', () => this.refreshBooks())
         }
     }
 </script>
