@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "86034818-beb6-4f9a-b7ef-3c78159e401a",
+		"name": "BoojBooks (Production)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User users#show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://boojbooks.com/api/v1/user",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Books books#index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://boojbooks.com/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book books#show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://boojbooks.com/api/v1/books/21",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book books#create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The 7 Habits of Highly Effective People\",\n    \"author\": \"Stephen R. Covey\",\n    \"isbn_10\":\"1471131823\",\n    \"isbn_13\": \"9781471131820\",\n    \"published_at\": \"2003-12-28\",\n    \"summary\": \"Stephen R. Covey's book, The 7 Habits of Highly Effective People, has been a top seller for the simple reason that it ignores trends and pop psychology for proven principles of fairness, integrity, honesty, and human dignity. Celebrating its 15th year of helping people solve personal and professional problems, this special anniversary edition includes a new foreword and afterword written by Covey that explore whether the 7 Habits are still relevant and answer some of the most common questions he has received over the past 15 years.\",\n    \"priority\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.com/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book books#update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The 7 Habits of Highly Effective People\",\n    \"author\": \"Stephen R. Covey\",\n    \"isbn_10\":\"1471131823\",\n    \"isbn_13\": \"9781471131820\",\n    \"published_at\": \"2013-01-01\",\n    \"summary\": \"The 7 Habits of Highly Effective People, has been a top seller for the simple reason that it ignores trends and pop psychology for proven principles of fairness, integrity, honesty, and human dignity. Celebrating its 15th year of helping people solve personal and professional problems, this special anniversary edition includes a new foreword and afterword written by Covey that explore whether the 7 Habits are still relevant and answer some of the most common questions he has received over the past 15 years.\",\n    \"priority\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.com/api/v1/books/48",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book books#delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"As a Man Thinketh\",\n    \"author\": \"James Allen\",\n    \"isbn_13\": \"9781640320130\",\n    \"published_at\": \"2017-02-24\",\n    \"summary\": \"As a Man Thinketh is a literary essay by James Allen, published in 1903. It was described by Allen as... dealing with the power of thought, and particularly with the use and application of thought to happy and beautiful issues. Allen has tried to make the book simple, so that all can easily grasp and follow its teaching, and put into practice the methods which it advises. It shows how, in his own thoughtóworld, each man holds the key to every condition, good or bad, that enters into his life, and that, by working patiently and intelligently upon his thoughts, he may remake his life, and transform his circumstances. It was also described by Allen as A book that will help you to help yourself, A pocket companion for thoughtful people, and A book on the power and right application of thought.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.com/api/v1/books/41",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"41"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "7ulARQG7LcmpZBe22TR878QbKq1rJ9KxWUjoMcQ5uJfYf5y53Cam33wTuODE",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7549b2ee-3e99-4293-8a06-3a2bc9d5e4a9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5d55f17a-683c-4f44-9627-78cbe817b9b5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
