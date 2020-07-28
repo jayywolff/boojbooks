@@ -39,7 +39,7 @@
 - Bootstrap 4
 
 ## TODO list
-- [ ] Connect to a publically available API
+- [X] Connect to a publically available API
 - [x] Create Postman collection and Vue app OR Laravel App
 - [x] Add or remove items from the list
 - [x] Change the order of the items in the list

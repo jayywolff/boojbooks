@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Services\GoogleBooksApiService as GoogleBooksApi;
 
 class Book extends Model
 {
@@ -12,7 +13,7 @@ class Book extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'author_id', 'isbn_10', 'isbn_13', 'published_at', 'summary'
+        'title', 'author_id', 'isbn_10', 'isbn_13', 'published_at', 'summary', 'volume_id'
     ];
 
     /**
@@ -30,5 +31,24 @@ class Book extends Model
     public function author()
     {
         return $this->belongsTo(Author::class);
+    }
+
+    public function buildWithGoogle()
+    {
+        if (is_null($this->volume_id)) {
+            return null;
+        }
+
+        $data = GoogleBooksApi::searchByVolumeId($this->volume_id);
+        if (is_null($data)) {
+            return false;
+        }
+        $this->author()->associate(Author::firstOrCreate(['name' => $data['author']]));
+        $this->title        = $data['title'];
+        $this->isbn_10      = $data['isbn_10'];
+        $this->isbn_13      = $data['isbn_13'];
+        $this->published_at = $data['published_at'];
+        $this->summary      = $data['description'];
+        return $this->save();
     }
 }

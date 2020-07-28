@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "e65fde43-328a-475b-bc44-15a7ae3f7ea1",
+		"name": "BoojBooks (Dev)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Google Books API",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/books/v1/volumes?q=intitle:mr nice guy&maxResults=10",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"books",
+						"v1",
+						"volumes"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "intitle:mr nice guy"
+						},
+						{
+							"key": "maxResults",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Books by title - book_search#by_title",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"mr nice guy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/book_search",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"book_search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Books by volume ID - book_search#by_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/book_search/5D97MAEACAAJ",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"book_search",
+						"5D97MAEACAAJ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User users#show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/user",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Books books#index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book books#show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/books/1",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book books#create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"As a Man Thinketh\",\n    \"author\": \"James Allen\",\n    \"isbn_13\": \"9781640320130\",\n    \"published_at\": \"2017-02-24\",\n    \"summary\": \"As a Man Thinketh is a literary essay by James Allen, published in 1903. It was described by Allen as... dealing with the power of thought, and particularly with the use and application of thought to happy and beautiful issues. Allen has tried to make the book simple, so that all can easily grasp and follow its teaching, and put into practice the methods which it advises. It shows how, in his own thoughtóworld, each man holds the key to every condition, good or bad, that enters into his life, and that, by working patiently and intelligently upon his thoughts, he may remake his life, and transform his circumstances. It was also described by Allen as A book that will help you to help yourself, A pocket companion for thoughtful people, and A book on the power and right application of thought.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book With Google books#create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"volume_id\": \"NEi_lAEACAAJ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book books#update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"As a Man Thinketh\",\n    \"author\": \"James Allen\",\n    \"isbn_13\": \"9781640320132\",\n    \"published_at\": \"2017-02-24\",\n    \"summary\": \"As a Man Thinketh is a literary essay by James Allen, published in 1903. It was described by Allen as... dealing with the power of thought, and particularly with the use and application of thought to happy and beautiful issues. Allen has tried to make the book simple, so that all can easily grasp and follow its teaching, and put into practice the methods which it advises. It shows how, in his own thoughtóworld, each man holds the key to every condition, good or bad, that enters into his life, and that, by working patiently and intelligently upon his thoughts, he may remake his life, and transform his circumstances. It was also described by Allen as A book that will help you to help yourself, A pocket companion for thoughtful people, and A book on the power and right application of thought.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/books/1",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book books#delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"As a Man Thinketh\",\n    \"author\": \"James Allen\",\n    \"isbn_13\": \"9781640320130\",\n    \"published_at\": \"2017-02-24\",\n    \"summary\": \"As a Man Thinketh is a literary essay by James Allen, published in 1903. It was described by Allen as... dealing with the power of thought, and particularly with the use and application of thought to happy and beautiful issues. Allen has tried to make the book simple, so that all can easily grasp and follow its teaching, and put into practice the methods which it advises. It shows how, in his own thoughtóworld, each man holds the key to every condition, good or bad, that enters into his life, and that, by working patiently and intelligently upon his thoughts, he may remake his life, and transform his circumstances. It was also described by Allen as A book that will help you to help yourself, A pocket companion for thoughtful people, and A book on the power and right application of thought.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://boojbooks.test/api/v1/books/33",
+					"protocol": "http",
+					"host": [
+						"boojbooks",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"33"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "7ulARQG7LcmpZBe22TR878QbKq1rJ9KxWUjoMcQ5uJfYf5y53Cam33wTuODE",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a11e36f7-2439-4184-bc0f-ee5249bfcba6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2622a2f0-ebb0-4ad4-b43a-94141b42a4dd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

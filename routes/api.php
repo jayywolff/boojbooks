@@ -19,4 +19,6 @@ Route::prefix('v1')->middleware('auth:api')->namespace('Api\V1')->group(function
     Route::get('/user', 'UserController@show');
 
     Route::apiResource('books', 'BookController');
+    Route::get('book_search', 'BookSearchController@by_title');
+    Route::get('book_search/{id}', 'BookSearchController@by_id');
 });

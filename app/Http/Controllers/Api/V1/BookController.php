@@ -31,18 +31,25 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validator($request->input())->validate();
-        $input = $request->only([
-            'title', 'isbn_10', 'isbn_13', 'published_at', 'summary'
-        ]);
+        if ($request->has('volume_id')) {
+            $book = Book::firstOrNew(['volume_id' => $request->input('volume_id')]);
+            if (! $book->buildWithGoogle()) {
+                return response()->json(['message' => 'Unable to find book'], 400);
+            }
+        } else {
+            $this->validator($request->input())->validate();
+            $input = $request->only([
+                'title', 'isbn_10', 'isbn_13', 'published_at', 'summary', 'volume_id'
+            ]);
 
-        $input['author_id'] = Author::firstOrCreate(['name' => $request->input('author')])->id;
-        if ($request->has('isbn_13')) {
-            $book = Book::firstOrCreate(['isbn_13' => $input['isbn_13']], $input);
-        } elseif ($request->has('isbn_10')) {
-            $book = Book::firstOrCreate(['isbn_10' => $input['isbn_10']], $input);
-        }  else {
-            $book = Book::create($input);
+            $input['author_id'] = Author::firstOrCreate(['name' => $request->input('author')])->id;
+            if ($request->has('isbn_13')) {
+                $book = Book::firstOrCreate(['isbn_13' => $input['isbn_13']], $input);
+            } elseif ($request->has('isbn_10')) {
+                $book = Book::firstOrCreate(['isbn_10' => $input['isbn_10']], $input);
+            }  else {
+                $book = Book::create($input);
+            }
         }
 
         if ($request->has('priority')) {
