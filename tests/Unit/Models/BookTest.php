@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Models;
 
-use \App\Book;
-use \App\Author;
+use App\Book;
+use App\Author;
 use Tests\TestCase;
 
 class BookTest extends TestCase

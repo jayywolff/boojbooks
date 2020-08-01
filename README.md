@@ -27,6 +27,9 @@
 - npm >= 6.x
 
 ## Testing
+- create a testing mysql db
+- Config test db name `vim .env`
+- `php artisan migrate --database=mysql_testing`
 - run `./vendor/bin/phpunit` to run the full test suite. 
 - Note: Test suite is a work in progress...
 

@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Models;
 
-use \App\Book;
-use \App\Author;
+use App\Book;
+use App\Author;
 use Tests\TestCase;
 
 class AuthorTest extends TestCase
@@ -32,7 +32,7 @@ class AuthorTest extends TestCase
 
         $author->books()->createMany($books->toArray());
 
-        $this->assertTrue($author->books()->count() == 2);
+        $this->assertCount(2, $author->books);
     }
 
     private function buildAuthor()

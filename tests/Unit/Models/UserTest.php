@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Models;
 
-use \App\User;
-use \App\Book;
+use App\User;
+use App\Book;
 use Tests\TestCase;
 
 class UserTest extends TestCase
@@ -31,7 +31,7 @@ class UserTest extends TestCase
 
         $user->books()->attach(factory(Book::class, 2)->create());
 
-        $this->assertTrue($user->books()->count() == 2);
+        $this->assertCount(2, $user->books);
     }
 
     /**
