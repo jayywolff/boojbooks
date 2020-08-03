@@ -1,0 +1,820 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 429,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "ia7xAwAAQBAJ",
+      "etag": "CJlizukAq4c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ia7xAwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Cat in the Hat",
+        "authors": [
+          "Dr. Seuss"
+        ],
+        "publisher": "RH Childrens Books",
+        "publishedDate": "2013-09-24",
+        "description": "Have a ball with Dr. Seuss and the Cat in the Hat in this classic picture book...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780385372015"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0385372019"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 72,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 3772,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ia7xAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ia7xAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ia7xAwAAQBAJ&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=ia7xAwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ia7xAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=ia7xAwAAQBAJ&rdid=book-ia7xAwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Cat_in_the_Hat-sample-epub.acsm?id=ia7xAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Cat_in_the_Hat-sample-pdf.acsm?id=ia7xAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ia7xAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Have a ball with Dr. Seuss and the Cat in the Hat in this classic picture book...but don&#39;t forget to clean up your mess!"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "krHxAwAAQBAJ",
+      "etag": "Zt9PNMi4QHA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/krHxAwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Cat in the Hat Comes Back",
+        "authors": [
+          "Dr. Seuss"
+        ],
+        "publisher": "RH Childrens Books",
+        "publishedDate": "2013-09-24",
+        "description": "The riotously funny follow-up to The Cat in the Hat celebrates its 60th Anniversary! The Cat is back—along with some surpise friends—in this beloved Beginner Book by Dr. Seuss. Dick and Sally have no time to play. It's winter and they have mountains of snow to shovel. So when the Cat comes to visit, he decides to go inside and to take a bath. No problem, right? Wrong! The pink ring he leaves in the tub creates is a very BIG pink problem when he transfers the stubborn stain from the bath onto Mother's white dress, Dad's shoes, the floors, the walls, and ultimately, over the entire yard full of snow! Will the kids EVER clean up the mess? You bet they will, with some help from the Cat and his helpers: 26 miniature cats (AKA Little Cats A-Z) who live inside the Cat's hat! This classic Dr. Seuss story is the perfect choice for beginning readers and read-alouds, especially on snow days! And with a peel-off 60th Anniversary sticker on the front cover, it makes a perfect gift for all ages. Originally created by Dr. Seuss, Beginner Books encourage children to read all by themselves, with simple words and illustrations that give clues to their meaning.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780385373517"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0385373511"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 72,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 21,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=krHxAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=krHxAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=krHxAwAAQBAJ&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=krHxAwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=krHxAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=krHxAwAAQBAJ&rdid=book-krHxAwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Cat_in_the_Hat_Comes_Back-sample-epub.acsm?id=krHxAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Cat_in_the_Hat_Comes_Back-sample-pdf.acsm?id=krHxAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=krHxAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The riotously funny follow-up to The Cat in the Hat celebrates its 60th Anniversary! The Cat is back—along with some surpise friends—in this beloved Beginner Book by Dr. Seuss. Dick and Sally have no time to play."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DJf1Vy2JXg8C",
+      "etag": "J21Mo4FRGug",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DJf1Vy2JXg8C",
+      "volumeInfo": {
+        "title": "Dr. Seuss' The Cat in the Hat Movie Storybook",
+        "authors": [
+          "Justine Fontes",
+          "Ron Fontes"
+        ],
+        "publisher": "Random House Books for Young Readers",
+        "publishedDate": "2003",
+        "description": "The kids slumped in their chairs Too glum to complain. And to make matters worse, It started to rain . . . The Cat has arrived, and he’s got a hat full of fun to save Conrad and Sally from a boring rainy afternoon. Written in buoyant easy-to-read prose (with more than a few hilarious asides from the pesky Fish), this official movie storybook is packed with full-color photos from the first-ever live-action film of the Dr. Seuss classic, starring Mike Meyers!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0375825029"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780375825026"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 48,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DJf1Vy2JXg8C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DJf1Vy2JXg8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=DJf1Vy2JXg8C&q=intitle:The+Cat+In+The+Hat&dq=intitle:The+Cat+In+The+Hat&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DJf1Vy2JXg8C&dq=intitle:The+Cat+In+The+Hat&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Dr_Seuss_The_Cat_in_the_Hat_Movie_Storyb.html?hl=&id=DJf1Vy2JXg8C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DJf1Vy2JXg8C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The kids slumped in their chairs Too glum to complain."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "4IOIDQAAQBAJ",
+      "etag": "4PdYOG3VMRg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4IOIDQAAQBAJ",
+      "volumeInfo": {
+        "title": "The Cat in the Hat Song Book",
+        "authors": [
+          "Dr. Seuss"
+        ],
+        "publisher": "Random House Books for Young Readers",
+        "publishedDate": "2017-01-10",
+        "description": "A collection of songs for beginning singers with cartoon drawings on every page",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780394816951"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0394816951"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 72,
+        "printType": "BOOK",
+        "categories": [
+          "JUVENILE NONFICTION"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 133,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4IOIDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4IOIDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=4IOIDQAAQBAJ&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=4IOIDQAAQBAJ&dq=intitle:The+Cat+In+The+Hat&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Cat_in_the_Hat_Song_Book.html?hl=&id=4IOIDQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4IOIDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A collection of songs for beginning singers with cartoon drawings on every page"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "kn15TKR5VXMC",
+      "etag": "rYkUH6N5qMU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kn15TKR5VXMC",
+      "volumeInfo": {
+        "title": "The Cat in the Hat Beginner Book Dictionary",
+        "authors": [
+          "Dr. Seuss",
+          "Philip D. Eastman"
+        ],
+        "publisher": "Random House Books for Young Readers",
+        "publishedDate": "1964",
+        "description": "A colorful and humorous dictionary of alphabetically arranged words and pictures designed to help children learn to read",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780394810096"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0394810090"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 133,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=kn15TKR5VXMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=kn15TKR5VXMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=kn15TKR5VXMC&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=kn15TKR5VXMC&dq=intitle:The+Cat+In+The+Hat&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Cat_in_the_Hat_Beginner_Book_Diction.html?hl=&id=kn15TKR5VXMC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kn15TKR5VXMC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A colorful and humorous dictionary of alphabetically arranged words and pictures designed to help children learn to read"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "XPG1KbXoTnQC",
+      "etag": "JNYQ/sOb6AQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/XPG1KbXoTnQC",
+      "volumeInfo": {
+        "title": "Now You See Me... (Dr. Seuss/Cat in the Hat)",
+        "authors": [
+          "Tish Rabe"
+        ],
+        "publisher": "Random House Books for Young Readers",
+        "publishedDate": "2012-09-11",
+        "description": "Hide-and-seek is a great game, but Nick always finds where Sally is hiding. And that's no fun! Enter the Cat in the Hat. His friend Gecko is an expert at hiding. Maybe Gecko can share some tips with the kids? So off they go to the jungle, where Gecko teaches them how to hide in plain sight—using camouflage! Kids won't be able to hide their delight in this rhymed Step 2 book based on an episode from the hit PBS Kids TV show The Cat in the Hat Knows a Lot About That! (Step 2 is a Step into Reading title for children who recognize familiar words and sound out new words with aural and visual cues. Step 2 books have simple stories, basic vocabulary, and short sentences.)",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780449814031"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0449814033"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 32,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.0.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XPG1KbXoTnQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XPG1KbXoTnQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=XPG1KbXoTnQC&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=XPG1KbXoTnQC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=XPG1KbXoTnQC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 4.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 4.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=XPG1KbXoTnQC&rdid=book-XPG1KbXoTnQC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 4990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 4990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Now_You_See_Me_Dr_Seuss_Cat_in_the_Hat-sample-epub.acsm?id=XPG1KbXoTnQC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=XPG1KbXoTnQC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Hide-and-seek is a great game, but Nick always finds where Sally is hiding."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "juBJD15XM-cC",
+      "etag": "Xq+lW8mv5ec",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/juBJD15XM-cC",
+      "volumeInfo": {
+        "title": "Hello, My Baby (Dr. Seuss/Cat in the Hat)",
+        "authors": [
+          "Tish Rabe"
+        ],
+        "publisher": "Random House Books for Young Readers",
+        "publishedDate": "2013",
+        "description": "Sally and Nick accompany the Cat in the Hat to world regions from the Galapagos Islands and the Australian Outback to the forests of India and the island of Madagascar to visit with baby animals of all shapes and sizes.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780449814345"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0449814343"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 12,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=juBJD15XM-cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=juBJD15XM-cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=juBJD15XM-cC&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=juBJD15XM-cC&dq=intitle:The+Cat+In+The+Hat&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Hello_My_Baby_Dr_Seuss_Cat_in_the_Hat.html?hl=&id=juBJD15XM-cC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=juBJD15XM-cC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Sally and Nick accompany the Cat in the Hat to world regions from the Galapagos Islands and the Australian Outback to the forests of India and the island of Madagascar to visit with baby animals of all shapes and sizes."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "XtuEDwAAQBAJ",
+      "etag": "/pIiTLoP3/A",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/XtuEDwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Cat in the Hat Beginner Book Dictionary in Spanish",
+        "authors": [
+          "Dr. Seuss",
+          "Philip D. Eastman",
+          "Robert R. Nardelli"
+        ],
+        "publisher": "Random House Books for Young Readers",
+        "publishedDate": "1966",
+        "description": "An alphabetically arranged introduction to over 1,000 Spanish words.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780394815428"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0394815424"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 133,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XtuEDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XtuEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=XtuEDwAAQBAJ&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=XtuEDwAAQBAJ&dq=intitle:The+Cat+In+The+Hat&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Cat_in_the_Hat_Beginner_Book_Diction.html?hl=&id=XtuEDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=XtuEDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "An alphabetically arranged introduction to over 1,000 Spanish words. Illus. in full color. Trans. by Dr. Robert Nardelli."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "IeI24hvgq0AC",
+      "etag": "E4TGcM0FSJ4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/IeI24hvgq0AC",
+      "volumeInfo": {
+        "title": "Busy as a Bee! (Dr. Seuss/Cat in the Hat)",
+        "authors": [
+          "Mary Tillworth"
+        ],
+        "publisher": "Golden Books",
+        "publishedDate": "2012",
+        "description": "The Cat in the Hat is off and away on a buzzing adventure! In this novelty board book featuring two-sided crayons and a die-cut handle, kids ages 3-7 will enter the world of Dr. Seuss to learn how honey is made. Activities range from drawing a crown for the Queen Bee to creating a sweet feast for the Cat and his friends. And with the easy-to-clean write on/wipe-off pages, kids can draw and color over and over again!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780307930118"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0307930114"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 12,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=IeI24hvgq0AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=IeI24hvgq0AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=IeI24hvgq0AC&printsec=frontcover&dq=intitle:The+Cat+In+The+Hat&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=IeI24hvgq0AC&dq=intitle:The+Cat+In+The+Hat&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Busy_as_a_Bee_Dr_Seuss_Cat_in_the_Hat.html?hl=&id=IeI24hvgq0AC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=IeI24hvgq0AC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The Cat in the Hat is off and away on a buzzing adventure! In this novelty board book featuring two-sided crayons and a die-cut handle, kids ages 3-7 will enter the world of Dr. Seuss to learn how honey is made."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DV0RvgAACAAJ",
+      "etag": "AZjTUylMBgI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DV0RvgAACAAJ",
+      "volumeInfo": {
+        "title": "Dr. Seuss - the Cat in the Hat [60th Anniversary Edition]",
+        "authors": [
+          "Seuss"
+        ],
+        "publishedDate": "2017-03-01",
+        "description": "The one and only Cat in the Hat from the iconic Dr. Seuss gets a brand new look, introducing his roller-coaster ride of mayhem to a new generation of readers. The iconic story from the one and only Dr. Seuss, now with a brand new look!When Sally and her brother are left alone, they think they're in for a dull day - until the Cat in the Hat steps in on the mat, bringing with him mayhem and madness! This is the classic book that every child should have the joy of reading.The wonderfully anarchic Cat in the Hat is one of the most popular characters in children's fiction, and this book is ideal for budding readers to tackle on their own.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0008219613"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780008219611"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 64,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DV0RvgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DV0RvgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=DV0RvgAACAAJ&dq=intitle:The+Cat+In+The+Hat&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DV0RvgAACAAJ&dq=intitle:The+Cat+In+The+Hat&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Dr_Seuss_the_Cat_in_the_Hat_60th_Anniver.html?hl=&id=DV0RvgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DV0RvgAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Two children sitting at home on a rainy day are visited by the cat who shows them some tricks and games."
+      }
+    }
+  ]
+}

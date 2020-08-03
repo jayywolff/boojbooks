@@ -8,6 +8,7 @@ use Throwable;
 
 class GoogleBooksApiService
 {
+    public const MAX_RESULTS = 10;
     private $url;
 
     public function __construct() {
@@ -26,7 +27,7 @@ class GoogleBooksApiService
         try {
             $response = Http::get($self->url, [
                 'q'          => 'intitle:' . $title,
-                'maxResults' => '10'
+                'maxResults' => self::MAX_RESULTS
             ]);
         } catch(Throwable $e) {
             Log::error($e);
@@ -35,6 +36,10 @@ class GoogleBooksApiService
 
         if ($response->failed()) {
             Log::error($response);
+            return collect();
+        }
+
+        if (! isset($response['items'])) {
             return collect();
         }
 
